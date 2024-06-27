@@ -1,14 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: autodeployXX
-  namespace: namespace-workflow-1719458361234
-  labels:
-    kubernetes.azure.com/generator: devhub
+  name: autodeploy
+  namespace: namespace-workflow-1692811819315
 spec:
   type: LoadBalancer
   selector:
-    app: autodeployXX
+    app: autodeploy
   ports:
     - protocol: TCP
       port: 5000
